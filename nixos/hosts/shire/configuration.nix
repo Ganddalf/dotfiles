@@ -144,8 +144,8 @@
   ];
 
   environment.shellAliases = {
-    rebuild-switch = "nixos-rebuild switch --flake /home/ganddalf/dotfiles/nixos#shire";
-    rebuild-boot = "nixos-rebuild boot --flake /home/ganddalf/dotfiles/nixos#shire";
+    rebuild-switch = "sudo nixos-rebuild switch --flake /home/ganddalf/dotfiles/nixos#shire";
+    rebuild-boot = "sudo nixos-rebuild boot --flake /home/ganddalf/dotfiles/nixos#shire";
   };
 
   # Some programs need SUID wrappers, can be configured further or are

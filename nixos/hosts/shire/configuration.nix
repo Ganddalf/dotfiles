@@ -112,6 +112,14 @@
     };
   };
 
+  # Nix Helper: https://github.com/viperML/nh
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    clean.extraArgs = "--keep-since 4d --keep 5";
+    flake = "/home/ganddalf/dotfiles/nixos/";
+  };
+
   # Install zsh
   programs.zsh.enable = true;
 
@@ -143,9 +151,10 @@
     gnomeExtensions.blur-my-shell
   ];
 
+  environment.sessionVariables = {
+  };
+
   environment.shellAliases = {
-    rebuild-switch = "sudo nixos-rebuild switch --flake /home/ganddalf/dotfiles/nixos#shire";
-    rebuild-boot = "sudo nixos-rebuild boot --flake /home/ganddalf/dotfiles/nixos#shire";
   };
 
   # Some programs need SUID wrappers, can be configured further or are

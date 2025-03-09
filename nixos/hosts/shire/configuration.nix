@@ -143,6 +143,11 @@
     gnomeExtensions.blur-my-shell
   ];
 
+  environment.shellAliases = {
+    rebuild-switch = "nixos-rebuild switch --flake /home/ganddalf/dotfiles/nixos#shire";
+    rebuild-boot = "nixos-rebuild boot --flake /home/ganddalf/dotfiles/nixos#shire";
+  };
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;

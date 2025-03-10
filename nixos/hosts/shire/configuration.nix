@@ -140,7 +140,7 @@
     curl
     git
     htop
-    neofetch
+    fastfetch
     telegram-desktop
     discord
     appimage-run

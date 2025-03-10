@@ -107,6 +107,7 @@
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
+    useGlobalPkgs = true;
     users = {
       "ganddalf" = import ./home.nix;
     };
@@ -204,6 +205,7 @@
   ];
 
   environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
   };
 
   environment.shellAliases = {

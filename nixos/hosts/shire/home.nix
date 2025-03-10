@@ -159,4 +159,10 @@
     };
   };
 
+  # VS Code configuration
+  # MAYBE: do this nix way
+  programs.vscode = {
+    enable = true;
+    package = pkgs.vscode.fhs;
+  };
 }

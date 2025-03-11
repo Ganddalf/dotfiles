@@ -104,7 +104,7 @@
       "docker"
     ];
     packages = with pkgs; [
-      #  thunderbird
+      godot_4
     ];
     shell = pkgs.zsh;
   };

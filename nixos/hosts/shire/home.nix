@@ -111,7 +111,6 @@
     settings = {
       font-family = "JetBrainsMono Nerd Font";
       font-size = 16;
-      theme = "MaterialOcean";
       keybind = "f11=toggle_fullscreen";
     };
   };
@@ -136,7 +135,6 @@
     enable = true;
     defaultEditor = true;
     settings = {
-      theme = "material_deep_ocean";
       editor = {
         line-number = "relative";
         lsp.display-messages = true;

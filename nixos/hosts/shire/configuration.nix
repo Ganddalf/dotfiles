@@ -94,6 +94,17 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
+  stylix = {
+    enable = true;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/dracula.yaml";
+    image = ../../../wallpapers/blue-night-sky.jpg;
+    polarity = "dark";
+    fonts.monospace = {
+      package = pkgs.nerd-fonts.jetbrains-mono;
+      name = "JetBrainsMono Nerd Font";
+    };
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.ganddalf = {
     isNormalUser = true;
@@ -121,7 +132,8 @@
   programs.nh = {
     enable = true;
     clean.enable = true;
-    clean.extraArgs = "--keep-since 4d --keep 5";
+    clean.dates = "2 days";
+    clean.extraArgs = "--keep-since 5d --keep 10";
     flake = "/home/ganddalf/dotfiles/nixos/";
   };
 
@@ -242,4 +254,11 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.11"; # Did you read the comment?
 
+  # Automatic upgrading
+  system.autoUpgrade = {
+    enable = true;
+    dates = "Sat";
+    flake = "/home/ganddalf/dotfiles/nixos/";
+    operation = "boot";
+  };
 }

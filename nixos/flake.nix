@@ -22,6 +22,7 @@
       self,
       nixpkgs,
       home-manager,
+      stylix,
       ...
     }@inputs:
     let
@@ -38,8 +39,9 @@
           specialArgs = { inherit self inputs; };
           modules = [
             ./hardware-configuration.nix
-            home-manager.nixosModules.home-manager
             self.nixosModules.default
+            home-manager.nixosModules.home-manager
+            stylix.nixosModules.stylix
           ];
         };
       };

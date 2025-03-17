@@ -12,6 +12,7 @@
     ./networking.nix
     ./nix.nix
     ./state-version.nix
+    ./theme.nix
     ./user.nix
     ./virtualisation.nix
     ./vpn.nix

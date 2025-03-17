@@ -99,7 +99,7 @@
           edge-tiling = true;
           dynamic-workspaces = true;
         };
-        "/org/gnome/shell/extensions/dash-to-dock" = {
+        "org/gnome/shell/extensions/dash-to-dock" = {
           dock-position = "LEFT";
           dock-fixed = true;
           extend-height = true;
@@ -108,7 +108,7 @@
           running-indicator-style = "DOTS";
           transparency-mode = "DEFAULT";
           custom-background-color = true;
-          background-color = "rgb(40,42,54)";
+          background-color = "rgb(28, 29, 37)";
         };
         "org/gnome/settings-daemon/plugins/media-keys" = {
           custom-keybindings = [

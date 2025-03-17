@@ -11,5 +11,7 @@
     appimage-run
     amnezia-vpn
     godot_4
+    kdePackages.okular
+    vlc
   ];
 }

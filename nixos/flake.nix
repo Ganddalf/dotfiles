@@ -15,6 +15,8 @@
     };
 
     stylix.url = "github:danth/stylix";
+
+    yandex-music.url = "github:cucumber-sp/yandex-music-linux";
   };
 
   outputs =
@@ -42,6 +44,7 @@
             self.nixosModules.default
             home-manager.nixosModules.home-manager
             stylix.nixosModules.stylix
+            inputs.yandex-music.nixosModules.default
           ];
         };
       };

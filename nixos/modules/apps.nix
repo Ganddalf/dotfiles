@@ -13,6 +13,7 @@
     godot_4
     kdePackages.okular
     vlc
+    obsidian
   ];
 
   programs.yandex-music.enable = true;

@@ -17,7 +17,7 @@
         shire = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit self inputs; };
           modules = [
-            ./configuration.nix
+            ./hardware-configuration.nix
             home-manager.nixosModules.default
             self.nixosModules.default
           ];

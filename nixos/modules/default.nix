@@ -1,12 +1,20 @@
 {
   imports = [
+    ./apps.nix
+    ./audio.nix
+    ./boot.nix
+    ./firefox.nix
     ./ghostty.nix
     ./git.nix
     ./gnome.nix
     ./helix.nix
     ./locale.nix
+    ./networking.nix
     ./nix.nix
+    ./state-version.nix
     ./user.nix
+    ./virtualisation.nix
+    ./vpn.nix
     ./vscode.nix
     ./zsh.nix
   ];

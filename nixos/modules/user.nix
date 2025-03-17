@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   users.users.ganddalf = {
     isNormalUser = true;
@@ -16,7 +16,6 @@
     users.ganddalf = {
       home.username = "ganddalf";
       home.homeDirectory = "/home/ganddalf";
-      home.stateVersion = "24.11";
       programs.home-manager.enable = true;
     };
   };

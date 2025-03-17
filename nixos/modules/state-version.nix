@@ -1,7 +1,6 @@
-{ pkgs, lib, inputs, ... }:
-let 
+let
   stateVersion = "24.11";
-in 
+in
 {
   system.stateVersion = stateVersion;
   home-manager.users.ganddalf.home.stateVersion = stateVersion;

@@ -1,4 +1,3 @@
-{ pkgs, ... }:
 {
   home-manager.users.ganddalf.programs.git = {
     enable = true;

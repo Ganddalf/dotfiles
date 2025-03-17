@@ -52,7 +52,7 @@
     gnome-system-monitor
     gnome-weather
     # loupe
-    # nautilus
+    nautilus
     gnome-connections
     simple-scan
     snapshot
@@ -78,7 +78,7 @@
             "dash-to-dock@micxgx.gmail.com"
           ];
           favorite-apps = [
-            "org.gnome.Nautilus.desktop"
+            "nemo.desktop"
             "com.mitchellh.ghostty.desktop"
             "firefox.desktop"
             "org.telegram.desktop.desktop"

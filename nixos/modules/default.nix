@@ -9,6 +9,7 @@
     ./gnome.nix
     ./helix.nix
     ./locale.nix
+    ./nemo.nix
     ./networking.nix
     ./nix.nix
     ./state-version.nix

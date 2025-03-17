@@ -13,6 +13,7 @@
     ./networking.nix
     ./nix.nix
     ./state-version.nix
+    ./tex.nix
     ./theme.nix
     ./user.nix
     ./virtualisation.nix

@@ -20,6 +20,7 @@
     pkgs.gnome-tweaks
     appindicator
     blur-my-shell
+    dash-to-dock
   ];
 
   environment.gnome.excludePackages = with pkgs; [
@@ -74,17 +75,20 @@
             "user-theme@gnome-shell-extensions.gcampax.github.com"
             "blur-my-shell@aunetx"
             "appindicatorsupport@rgcjonas.gmail.com"
+            "dash-to-dock@micxgx.gmail.com"
           ];
           favorite-apps = [
             "org.gnome.Nautilus.desktop"
             "com.mitchellh.ghostty.desktop"
             "firefox.desktop"
             "org.telegram.desktop.desktop"
+            "obsidian.desktop"
+            "yandex-music.desktop"
             "code.desktop"
           ];
         };
         "org/gnome/shell/app-switcher" = {
-          current-workspace-only = true;
+          current-workspace-only = false;
         };
         "org/gnome/desktop/interface" = {
           color-scheme = "prefer-dark";
@@ -94,6 +98,17 @@
         "org/gnome/mutter" = {
           edge-tiling = true;
           dynamic-workspaces = true;
+        };
+        "/org/gnome/shell/extensions/dash-to-dock" = {
+          dock-position = "LEFT";
+          dock-fixed = true;
+          extend-height = true;
+          show-trash = false;
+          apply-custom-theme = false;
+          running-indicator-style = "DOTS";
+          transparency-mode = "DEFAULT";
+          custom-background-color = true;
+          background-color = "rgb(40,42,54)";
         };
         "org/gnome/settings-daemon/plugins/media-keys" = {
           custom-keybindings = [

@@ -11,17 +11,18 @@
   };
 
   outputs =
-    { self, nixpkgs, ... }@inputs:
+    { self, nixpkgs, home-manager, ... }@inputs:
     {
       nixosConfigurations = {
         shire = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs; };
+          specialArgs = { inherit self inputs; };
           modules = [
-            ./hosts/shire/configuration.nix
-            inputs.home-manager.nixosModules.default
+            ./configuration.nix
+            home-manager.nixosModules.default
+            self.nixosModules.default
           ];
         };
       };
-      nixosModules = import ./modules
+      nixosModules.default = ./modules;
     };
 }

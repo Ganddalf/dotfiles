@@ -10,6 +10,11 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
 
+  home-manager.users.ganddalf.xsession = {
+    enable = true;
+    windowManager.command = "…";
+  };
+
   environment.systemPackages = with pkgs; [
     gnomeExtensions.appindicator
     gnomeExtensions.blur-my-shell

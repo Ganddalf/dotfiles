@@ -13,7 +13,6 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    inputs.home-manager.nixosModules.default
   ];
 
   # Bootloader.
@@ -30,12 +29,6 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-
-  # Nix settings
-  nix.settings.extra-experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
 
   # Set your time zone.
   time.timeZone = "Europe/Moscow";
@@ -59,51 +52,11 @@
   # Docker
   virtualisation.docker.enable = true;
 
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.ganddalf = {
-    isNormalUser = true;
-    description = "Ganddalf";
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-      "docker"
-    ];
-    packages = with pkgs; [
-      godot_4
-    ];
-    shell = pkgs.zsh;
-  };
-
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    useGlobalPkgs = true;
-    users = {
-      "ganddalf" = import ./home.nix;
-    };
-  };
-
-  # Nix Helper: https://github.com/viperML/nh
-  programs.nh = {
-    enable = true;
-    clean.enable = true;
-    clean.extraArgs = "--keep-since 4d --keep 5";
-    flake = "/home/ganddalf/dotfiles/nixos/";
-  };
-
-  # Install zsh
-  programs.zsh.enable = true;
-
   # Install firefox.
   programs.firefox.enable = true;
 
   # VPN Client
   programs.amnezia-vpn.enable = true;
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -111,21 +64,14 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     curl
-    git
     htop
     fastfetch
     telegram-desktop
     discord
     appimage-run
     amnezia-vpn
-    helix
-    ghostty
+    godot_4
   ];
-
-
-  environment.sessionVariables = {
-    NIXOS_OZONE_WL = "1";
-  };
 
   system.stateVersion = "24.11"; # Did you read the comment?
 }

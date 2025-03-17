@@ -7,9 +7,14 @@ let
 in
 {
   stylix = {
+    homeManagerIntegration = {
+      autoImport = true;
+      followSystem = true;
+    };
+
     enable = true;
     base16Scheme = themes.gruvbox;
-    image = ../../walpapers/forest.jpg;
+    image = ../../wallpapers/forest.jpg;
     polarity = "dark";
     cursor = {
       package = pkgs.simp1e-cursors;

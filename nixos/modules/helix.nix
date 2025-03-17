@@ -1,4 +1,3 @@
-{ pkgs, ... }:
 {
   environment.sessionVariables = {
     EDITOR = "hx";
@@ -8,7 +7,6 @@
     enable = true;
     defaultEditor = true;
     settings = {
-      theme = "material_deep_ocean";
       editor = {
         line-number = "relative";
         lsp.display-messages = true;
@@ -19,13 +17,13 @@
         {
           name = "nix";
           auto-format = true;
-          formatter = with pkgs; {
-            command = "${nixfmt-rfc-style}/bin/nixfmt";
+          formatter = {
+            command = "nixfmt";
           };
         }
       ];
-      language-server.nixd = with pkgs; {
-        command = "${nixd}/bin/nixd";
+      language-server.nixd = {
+        command = "nixd";
       };
     };
   };

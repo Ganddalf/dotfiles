@@ -22,5 +22,6 @@
           ];
         };
       };
+      nixosModules = import ./modules
     };
 }

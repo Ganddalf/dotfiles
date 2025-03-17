@@ -10,14 +10,12 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
 
-  home-manager.users.ganddalf.xsession = {
-    enable = true;
-    windowManager.command = "…";
-  };
+  services.udev.packages = [ pkgs.gnome-settings-daemon ];
 
-  environment.systemPackages = with pkgs; [
-    gnomeExtensions.appindicator
-    gnomeExtensions.blur-my-shell
+  environment.systemPackages = with pkgs.gnomeExtensions; [
+    pkgs.gnome-tweaks
+    appindicator
+    blur-my-shell
   ];
 
   environment.gnome.excludePackages = with pkgs; [
@@ -71,4 +69,24 @@
     yelp
     gnome-software
   ];
+
+  home-manager.users.ganddalf = {
+    xsession = {
+      enable = true;
+      windowManager.command = "…";
+    };
+    dconf = {
+      enable = true;
+      settings = {
+        "org/gnome/shell" = {
+          disable-user-extensions = false; # enables user extensions
+          enabled-extensions = [
+            "user-theme@gnome-shell-extensions.gcampax.github.com"
+            "blur-my-shell@aunetx"
+            "appindicatorsupport@rgcjonas.gmail.com"
+          ];
+        };
+      };
+    };
+  };
 }

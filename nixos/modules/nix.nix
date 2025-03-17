@@ -1,9 +1,16 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
   ];
+
+  environment.systemPackages = with pkgs; [
+    nixd
+    nixfmt-rfc-style
+  ];
+
+  nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
 
   programs.nh = {
     enable = true;

@@ -13,8 +13,9 @@ in
     };
 
     enable = true;
-    base16Scheme = themes.gruvbox;
-    image = ../../wallpapers/forest.jpg;
+    autoEnable = false;
+    base16Scheme = themes.dracula;
+    image = ../../wallpapers/nixos-dracula.png;
     polarity = "dark";
     cursor = {
       package = pkgs.simp1e-cursors;
@@ -42,5 +43,18 @@ in
         name = "Noto Color Emoji";
       };
     };
+
+    targets = {
+      gnome.enable = true;
+      gtk.enable = true;
+    };
+  };
+
+  home-manager.users.ganddalf.stylix.targets = {
+    gnome.enable = true;
+    gnome.useWallpaper = true;
+    ghostty.enable = true;
+    helix.enable = true;
+    gtk.enable = true;
   };
 }

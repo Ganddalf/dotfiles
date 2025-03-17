@@ -13,6 +13,7 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     useGlobalPkgs = true;
+    backupFileExtension = "backup";
     users.ganddalf = {
       home.username = "ganddalf";
       home.homeDirectory = "/home/ganddalf";

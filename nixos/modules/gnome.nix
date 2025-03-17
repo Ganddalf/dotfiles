@@ -85,6 +85,25 @@
             "blur-my-shell@aunetx"
             "appindicatorsupport@rgcjonas.gmail.com"
           ];
+          favorite-apps = [
+            "org.gnome.Nautilus.desktop"
+            "com.mitchellh.ghostty.desktop"
+            "firefox.desktop"
+            "org.telegram.desktop.desktop"
+            "code.desktop"
+          ];
+        };
+        "org/gnome/shell/app-switcher" = {
+          current-workspace-only = true;
+        };
+        "org/gnome/desktop/interface" = {
+          color-scheme = "prefer-dark";
+          accent-color = "purple";
+          enable-hot-corners = false;
+        };
+        "org/gnome/mutter" = {
+          edge-tiling = true;
+          dynamic-workspaces = true;
         };
       };
     };

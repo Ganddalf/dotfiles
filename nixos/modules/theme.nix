@@ -47,6 +47,7 @@ in
     targets = {
       gnome.enable = true;
       gtk.enable = true;
+      qt.enable = true;
     };
   };
 
@@ -56,5 +57,6 @@ in
     ghostty.enable = true;
     helix.enable = true;
     gtk.enable = true;
+    qt.enable = true;
   };
 }

@@ -13,6 +13,7 @@
     kdePackages.okular
     vlc
     obsidian
+    qbittorrent-enhanced
   ];
 
   programs.yandex-music.enable = true;

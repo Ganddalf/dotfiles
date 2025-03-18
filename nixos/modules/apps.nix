@@ -14,6 +14,16 @@
     vlc
     obsidian
     qbittorrent-enhanced
+    aseprite
+    blender
+    gimp
+    inkscape
+    easyeffects
+    reaper
+    yaak
+    yazi
+    feh
+    amberol
   ];
 
   programs.yandex-music.enable = true;

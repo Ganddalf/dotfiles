@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ inputs, ... }:
 {
   users.users.ganddalf = {
     isNormalUser = true;

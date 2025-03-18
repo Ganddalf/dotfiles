@@ -24,6 +24,7 @@
     yazi
     feh
     amberol
+    xournalpp
   ];
 
   programs.yandex-music.enable = true;

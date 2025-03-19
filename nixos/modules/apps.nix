@@ -22,7 +22,6 @@
     reaper
     yaak
     yazi
-    feh
     amberol
     xournalpp
   ];

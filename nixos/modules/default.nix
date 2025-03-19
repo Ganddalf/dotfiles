@@ -8,6 +8,7 @@
     ./git.nix
     ./gnome.nix
     ./helix.nix
+    ./ktalk.nix
     ./locale.nix
     ./nemo.nix
     ./networking.nix

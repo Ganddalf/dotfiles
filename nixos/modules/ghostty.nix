@@ -1,6 +1,7 @@
 {
   environment.sessionVariables = {
-    TERMINAL = "ghostty";
+    # TERMINAL = "xterm-ghostty";
+    # TERM = "xterm-ghostty";
   };
 
   home-manager.users.ganddalf.programs.ghostty = {

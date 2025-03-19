@@ -23,6 +23,7 @@
     appindicator
     blur-my-shell
     dash-to-dock
+    toggle-headphone
   ];
 
   environment.gnome.excludePackages = with pkgs; [

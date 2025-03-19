@@ -18,7 +18,6 @@
     blender
     gimp
     inkscape
-    easyeffects
     reaper
     yaak
     yazi

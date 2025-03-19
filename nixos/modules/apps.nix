@@ -26,6 +26,7 @@
     libreoffice-qt6
     hunspell
     hunspellDicts.ru_RU
+    dbeaver-bin
   ];
 
   programs.yandex-music.enable = true;

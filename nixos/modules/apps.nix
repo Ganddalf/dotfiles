@@ -24,6 +24,9 @@
     yazi
     amberol
     xournalpp
+    libreoffice-qt6
+    hunspell
+    hunspellDicts.ru_RU
   ];
 
   programs.yandex-music.enable = true;

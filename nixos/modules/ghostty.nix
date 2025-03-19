@@ -1,4 +1,8 @@
 {
+  environment.sessionVariables = {
+    TERMINAL = "ghostty";
+  };
+
   home-manager.users.ganddalf.programs.ghostty = {
     enable = true;
     enableBashIntegration = true;

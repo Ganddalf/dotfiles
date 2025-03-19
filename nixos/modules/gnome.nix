@@ -13,6 +13,7 @@
 
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
+  services.xserver.excludePackages = [ pkgs.xterm ];
 
   services.udev.packages = [ pkgs.gnome-settings-daemon ];
 
@@ -27,7 +28,7 @@
   environment.gnome.excludePackages = with pkgs; [
     orca
     evince
-    file-roller
+    # file-roller
     geary
     gnome-disk-utility
     seahorse
@@ -40,8 +41,8 @@
     baobab
     epiphany
     gnome-text-editor
-    gnome-calculator
-    gnome-calendar
+    # gnome-calculator
+    # gnome-calendar
     gnome-characters
     # gnome-clocks
     gnome-console

@@ -1,8 +1,8 @@
+{ pkgs, ... }:
 {
-  environment.sessionVariables = {
-    # TERMINAL = "xterm-ghostty";
-    # TERM = "xterm-ghostty";
-  };
+  environment.systemPackages = with pkgs; [
+    xdg-terminal-exec
+  ];
 
   home-manager.users.ganddalf.programs.ghostty = {
     enable = true;

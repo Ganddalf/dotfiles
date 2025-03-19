@@ -4,7 +4,7 @@ let
   version = "3.0.0";
 
   src = pkgs.fetchurl {
-    url = "https://st.ktalk.host/ktalk-app/linux/ktalk3.0.0x86_64.AppImage";
+    url = "https://st.ktalk.host/ktalk-app/linux/ktalk${version}x86_64.AppImage";
     hash = "sha256-SngWAEYF5rK5iOc/38A0C0LwZCrpLn38knyCPROxZ2k=";
   };
 

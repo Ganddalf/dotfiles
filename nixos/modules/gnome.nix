@@ -17,6 +17,7 @@
   services.udev.packages = [ pkgs.gnome-settings-daemon ];
 
   environment.systemPackages = with pkgs.gnomeExtensions; [
+    pkgs.libappindicator
     pkgs.gnome-tweaks
     appindicator
     blur-my-shell

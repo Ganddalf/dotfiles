@@ -4,6 +4,7 @@
     ./audio.nix
     ./boot.nix
     ./firefox.nix
+    ./gaming.nix
     ./ghostty.nix
     ./git.nix
     ./gnome.nix

@@ -41,7 +41,7 @@
     gnome-user-docs
     baobab
     epiphany
-    gnome-text-editor
+    # gnome-text-editor
     # gnome-calculator
     # gnome-calendar
     gnome-characters
@@ -51,7 +51,7 @@
     gnome-font-viewer
     gnome-logs
     gnome-maps
-    gnome-music
+    # gnome-music
     gnome-system-monitor
     gnome-weather
     # loupe

@@ -21,12 +21,12 @@
     reaper
     yaak
     yazi
-    amberol
     xournalpp
     libreoffice-qt6
     hunspell
     hunspellDicts.ru_RU
     dbeaver-bin
+    uv
   ];
 
   programs.yandex-music.enable = true;

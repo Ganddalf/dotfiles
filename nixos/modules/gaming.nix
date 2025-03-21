@@ -9,7 +9,7 @@
   environment.systemPackages = with pkgs; [
     mangohud
     lutris
-    heroic
+    # heroic
     protonup-qt
     wineWowPackages.stable
   ];

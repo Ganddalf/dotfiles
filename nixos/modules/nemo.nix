@@ -2,6 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     nemo-with-extensions
+    nemo-fileroller
   ];
 
   home-manager.users.ganddalf = {

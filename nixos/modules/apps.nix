@@ -27,6 +27,7 @@
     hunspellDicts.ru_RU
     dbeaver-bin
     uv
+    wireshark-qt
   ];
 
   programs.yandex-music.enable = true;

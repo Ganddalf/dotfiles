@@ -24,8 +24,8 @@ in
     };
     fonts = {
       serif = {
-        package = pkgs.adwaita-fonts;
-        name = "Adwaita Sans";
+        package = pkgs.ibm-plex;
+        name = "IBM Plex Serif";
       };
 
       sansSerif = {

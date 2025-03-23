@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 let
   themes = {
     gruvbox = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
@@ -47,10 +47,6 @@ in
     targets = {
       gnome.enable = true;
       gtk.enable = true;
-      qt = {
-        enable = true;
-        platform = lib.mkForce "qtct";
-      };
     };
   };
 
@@ -60,9 +56,5 @@ in
     ghostty.enable = true;
     helix.enable = true;
     gtk.enable = true;
-    qt = {
-      enable = true;
-      platform = lib.mkForce "qtct";
-    };
   };
 }

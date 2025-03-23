@@ -29,6 +29,7 @@
     uv
     wireshark-qt
     ktalk
+    zoom-us
   ];
 
   programs.yandex-music.enable = true;

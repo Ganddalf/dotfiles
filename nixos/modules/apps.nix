@@ -30,6 +30,7 @@
     wireshark-qt
     ktalk
     zoom-us
+    eve-ng-integration
   ];
 
   programs.yandex-music.enable = true;

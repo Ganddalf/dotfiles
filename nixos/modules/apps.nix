@@ -27,10 +27,8 @@
     hunspellDicts.ru_RU
     dbeaver-bin
     uv
-    wireshark-qt
     ktalk
     zoom-us
-    eve-ng-integration
   ];
 
   programs.yandex-music.enable = true;

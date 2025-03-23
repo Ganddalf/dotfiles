@@ -79,7 +79,6 @@
             "blur-my-shell@aunetx"
             "appindicatorsupport@rgcjonas.gmail.com"
             "dash-to-dock@micxgx.gmail.com"
-            "toggleAudio@blackeyeprojects.de"
           ];
           favorite-apps = [
             "nemo.desktop"
@@ -114,12 +113,6 @@
           custom-background-color = true;
           background-color = "rgb(28, 29, 37)";
         };
-        "org/gnome/shell/extensions/toggle-audio" = {
-          toggle-use-monochrome-setting-icon = true;
-          show-indicator = false;
-          speaker = "(31, 'Линейный выход - Starship/Matisse HD Audio Controller', 'Линейный_выход-Starship/Matisse_HD_Audio_Controller-audio-card-analog-pci')";
-          headphone = "(24, 'Динамики - USB Audio Device', 'Динамики-USB_Audio_Device-audio-speakers')";
-        };
         "org/gnome/settings-daemon/plugins/media-keys" = {
           custom-keybindings = [
             "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
@@ -127,7 +120,7 @@
         };
         "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
           binding = "<Control><Alt>t";
-          command = "ghostty";
+          command = "xdg-terminal-exec";
           name = "open-terminal";
         };
       };

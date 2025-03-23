@@ -32,6 +32,9 @@
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
+        config.packageOverrides = pkgs: {
+          ktalk = pkgs.callPackage ./pkgs/ktalk.nix { };
+        };
       };
     in
     {

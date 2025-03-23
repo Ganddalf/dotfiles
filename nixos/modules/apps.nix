@@ -28,6 +28,7 @@
     dbeaver-bin
     uv
     wireshark-qt
+    ktalk
   ];
 
   programs.yandex-music.enable = true;

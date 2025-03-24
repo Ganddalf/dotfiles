@@ -35,6 +35,7 @@
         config.packageOverrides = pkgs: {
           ktalk = pkgs.callPackage ./pkgs/ktalk.nix { };
           eve-ng-integration = pkgs.callPackage ./pkgs/eve-ng-integration.nix { };
+          outline-manager = pkgs.callPackage ./pkgs/outline-manager.nix { };
         };
       };
     in

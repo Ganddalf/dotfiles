@@ -29,6 +29,7 @@
     uv
     ktalk
     zoom-us
+    gparted
   ];
 
   programs.yandex-music.enable = true;

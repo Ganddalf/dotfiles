@@ -107,6 +107,7 @@
           dock-fixed = true;
           extend-height = true;
           show-trash = false;
+          show-mounts = false;
           apply-custom-theme = false;
           running-indicator-style = "DOTS";
           transparency-mode = "DEFAULT";

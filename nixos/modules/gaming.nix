@@ -13,4 +13,6 @@
     protonup-qt
     wineWowPackages.stable
   ];
+
+  hardware.xone.enable = true;
 }

@@ -9,9 +9,10 @@
   environment.systemPackages = with pkgs; [
     mangohud
     lutris
-    # heroic
     protonup-qt
     wineWowPackages.stable
+    wineWowPackages.waylandFull
+    winetricks
   ];
 
   hardware.xone.enable = true;

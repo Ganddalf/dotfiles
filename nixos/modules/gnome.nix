@@ -112,7 +112,7 @@
           running-indicator-style = "DOTS";
           transparency-mode = "DEFAULT";
           custom-background-color = true;
-          background-color = "rgb(19, 6, 38)";
+          background-color = "rgb(28, 29, 37)";
         };
         "org/gnome/settings-daemon/plugins/media-keys" = {
           custom-keybindings = [

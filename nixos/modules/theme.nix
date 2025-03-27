@@ -15,7 +15,7 @@ in
     enable = true;
     autoEnable = false;
     base16Scheme = themes.dracula;
-    image = ../../wallpapers/nixos-dracula.png;
+    image = ../../wallpapers/purple.jpg;
     polarity = "dark";
     cursor = {
       package = pkgs.simp1e-cursors;

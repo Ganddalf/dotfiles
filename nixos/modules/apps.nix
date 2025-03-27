@@ -27,7 +27,7 @@
     hunspellDicts.ru_RU
     dbeaver-bin
     uv
-    python314
+    python312
     ktalk
     zoom-us
     gparted

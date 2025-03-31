@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   # Docker
   virtualisation.docker.enable = true;
@@ -7,4 +8,8 @@
   users.groups.libvirtd.members = [ "ganddalf" ];
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
+
+  environment.systemPackages = with pkgs; [
+    virtiofsd
+  ];
 }

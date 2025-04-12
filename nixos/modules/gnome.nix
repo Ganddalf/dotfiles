@@ -20,6 +20,7 @@
   environment.systemPackages = with pkgs.gnomeExtensions; [
     pkgs.libappindicator
     pkgs.gnome-tweaks
+    pkgs.gnome-pomodoro
     appindicator
     blur-my-shell
     dash-to-dock

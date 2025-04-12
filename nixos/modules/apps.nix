@@ -31,6 +31,7 @@
     ktalk
     zoom-us
     gparted
+    obs-studio
   ];
 
   programs.yandex-music.enable = true;

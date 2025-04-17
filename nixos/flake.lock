@@ -264,11 +264,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1744570807,
-        "narHash": "sha256-g07PYyZCIHVDLzRo8fllZRES7Nf9R8+xZwNJ7t0gt5s=",
+        "lastModified": 1744902080,
+        "narHash": "sha256-px7OEMQYhS9StY3sTYYeM/jJspk6SXgoPU7OmOSx+1c=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "cfa196c705a896372319249d757085876ab62448",
+        "rev": "2c71aae678c03a39c2542e136b87bd040ae1b3cb",
         "type": "github"
       },
       "original": {
@@ -400,11 +400,11 @@
         "tinted-zed": "tinted-zed"
       },
       "locked": {
-        "lastModified": 1744568060,
-        "narHash": "sha256-rSJbZiizj8br/mjhdkUE2kJhXB0Da8lGCKmNmt78Fis=",
+        "lastModified": 1744668092,
+        "narHash": "sha256-XDmpI3ywMkypsHKRF2am6BzZ5OjwpQMulAe8L87Ek8U=",
         "owner": "danth",
         "repo": "stylix",
-        "rev": "8f0ee5532506e0dc62922eefb8c83fa758bcc684",
+        "rev": "38aff11a7097f4da6b95d4c4d2c0438f25a08d52",
         "type": "github"
       },
       "original": {
@@ -570,11 +570,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1744514450,
-        "narHash": "sha256-aIBU8F+dDpdHx5oQEdCu48/IlXYgvpv0ZG+MlkqaDh0=",
+        "lastModified": 1744856209,
+        "narHash": "sha256-/BtMU85kGPAevugyT98NHmsKXCCTZ7AlZcipeHTW534=",
         "owner": "nix-community",
         "repo": "nix-vscode-extensions",
-        "rev": "130a15b9c4231ec0dc59e13453ac96c8ab4cdc5d",
+        "rev": "988752336503df4d2db2801c3b010f27fb634a47",
         "type": "github"
       },
       "original": {
@@ -590,11 +590,11 @@
         "ymExe": "ymExe"
       },
       "locked": {
-        "lastModified": 1744246000,
-        "narHash": "sha256-bvNjUpB8FwWRBnTxsGwK0vXE0Rys14Zoj4TtD0nOkDc=",
+        "lastModified": 1744678142,
+        "narHash": "sha256-Fg6kQesc2MoPmneTBx6o5TDkYcssPf7wwH519AKW78o=",
         "owner": "cucumber-sp",
         "repo": "yandex-music-linux",
-        "rev": "2dc1b4bd458d2533329e3f2f8f55d0b69b50db94",
+        "rev": "e46a4fa8198afd8aeb6f24985ae299f26151c0ba",
         "type": "github"
       },
       "original": {
@@ -606,13 +606,13 @@
     "ymExe": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-GiKZt+msFExWIV3qQLl3JD7yRZMhqOditgzzcnJRAfM=",
+        "narHash": "sha256-ACPaNEBG9pHTSiNRMRHrVK8J5V7jbPpavpH3Zt2IZ/w=",
         "type": "file",
-        "url": "https://music-desktop-application.s3.yandex.net/stable/Yandex_Music_x64_5.44.3.exe"
+        "url": "https://music-desktop-application.s3.yandex.net/stable/Yandex_Music_x64_5.46.0.exe"
       },
       "original": {
         "type": "file",
-        "url": "https://music-desktop-application.s3.yandex.net/stable/Yandex_Music_x64_5.44.3.exe"
+        "url": "https://music-desktop-application.s3.yandex.net/stable/Yandex_Music_x64_5.46.0.exe"
       }
     }
   },

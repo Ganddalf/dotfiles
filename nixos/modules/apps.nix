@@ -32,6 +32,7 @@
     zoom-us
     gparted
     obs-studio
+    jetbrains.idea-community
   ];
 
   programs.yandex-music.enable = true;

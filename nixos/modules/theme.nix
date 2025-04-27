@@ -54,7 +54,6 @@ in
     gnome.enable = true;
     gnome.useWallpaper = true;
     ghostty.enable = true;
-    helix.enable = true;
     gtk.enable = true;
   };
 }

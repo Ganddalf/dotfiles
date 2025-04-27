@@ -7,8 +7,10 @@
     enable = true;
     defaultEditor = true;
     settings = {
+      theme = "dracula";
       editor = {
         line-number = "relative";
+        color-modes = true;
         lsp.display-messages = true;
       };
     };

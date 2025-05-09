@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    aider-chat-full
+    #aider-chat-full
   ];
 }

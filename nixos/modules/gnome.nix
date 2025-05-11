@@ -1,5 +1,4 @@
 {
-  config,
   pkgs,
   ...
 }:
@@ -66,10 +65,6 @@
   ];
 
   home-manager.users.ganddalf = {
-    xsession = {
-      enable = true;
-      windowManager.command = "…";
-    };
     dconf = {
       enable = true;
       settings = {
@@ -132,20 +127,6 @@
       iconTheme = {
         name = "Papirus-Dark";
         package = pkgs.papirus-icon-theme.override { color = "violet"; };
-      };
-    };
-    xdg = {
-      enable = true;
-      userDirs = {
-        enable = true;
-        desktop = "${config.users.users.ganddalf.home}/Desktop";
-        download = "${config.users.users.ganddalf.home}/Downloads";
-        documents = "${config.users.users.ganddalf.home}/Documents";
-        music = "${config.users.users.ganddalf.home}/Music";
-        pictures = "${config.users.users.ganddalf.home}/Pictures";
-        publicShare = "${config.users.users.ganddalf.home}/Public";
-        templates = "${config.users.users.ganddalf.home}/Templates";
-        videos = "${config.users.users.ganddalf.home}/Videos";
       };
     };
   };

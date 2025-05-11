@@ -10,6 +10,7 @@
     ./git.nix
     ./gnome.nix
     ./helix.nix
+    #./kde.nix
     ./kdeconnect.nix
     ./locale.nix
     ./nemo.nix

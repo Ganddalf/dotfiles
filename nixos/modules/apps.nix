@@ -37,4 +37,16 @@
 
   programs.yandex-music.enable = true;
   programs.yandex-music.tray.enable = true;
+
+  home-manager.users.ganddalf.xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "application/pdf" = [ "okularApplication_pdf.desktop" ];
+      "image/webp" = [ "org.gnome.Loupe.desktop" ];
+      "image/jpeg" = [ "org.gnome.Loupe.desktop" ];
+      "image/gif" = [ "org.gnome.Loupe.desktop" ];
+      "image/png" = [ "org.gnome.Loupe.desktop" ];
+      "image/svg+xml" = [ "org.inkscape.Inkscape.desktop" ];
+    };
+  };
 }

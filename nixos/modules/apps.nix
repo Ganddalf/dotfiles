@@ -1,4 +1,12 @@
-{ pkgs, ... }:
+{
+  pkgs,
+  ...
+}:
+let
+  yandex-music-custom = pkgs.yandex-music.override {
+    trayEnabled = true;
+  };
+in
 {
   environment.systemPackages = with pkgs; [
     vim
@@ -16,7 +24,7 @@
     qbittorrent-enhanced
     aseprite
     blender
-    gimp
+    gimp3
     inkscape
     reaper
     yaak
@@ -33,10 +41,10 @@
     gparted
     obs-studio
     jetbrains.idea-community
+    yandex-music-custom
+    darktable
+    digikam
   ];
-
-  programs.yandex-music.enable = true;
-  programs.yandex-music.tray.enable = true;
 
   home-manager.users.ganddalf.xdg.mimeApps = {
     enable = true;

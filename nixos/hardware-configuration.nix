@@ -25,7 +25,7 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
-  boot.supportedFilesystems = [ "ntfs" ];
+  boot.supportedFilesystems = [ "btrfs" ];
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/649d1e02-8a3c-4618-9ae8-60ac97ca4780";
@@ -36,6 +36,22 @@
     fsType = "ext4";
     noCheck = false;
     neededForBoot = true;
+  };
+  fileSystems."/mnt/D" = {
+    device = "/dev/disk/by-uuid/1c2d99f3-221f-8bbe-1dc5-2e47d75821cc";
+    fsType = "btrfs";
+    options = [
+      "nofail"
+      "x-gvfs-show"
+    ];
+  };
+  fileSystems."/mnt/G" = {
+    device = "/dev/disk/by-uuid/a7df6e96-ae7a-1cd8-24a2-289246f5fa4b";
+    fsType = "btrfs";
+    options = [
+      "nofail"
+      "x-gvfs-show"
+    ];
   };
   swapDevices = [
     { device = "/dev/disk/by-uuid/0c9ae165-bdf9-46aa-b20f-635f7fee0db7"; }
